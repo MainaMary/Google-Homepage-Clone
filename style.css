@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    padding: 1rem 0;
+    
+}
+.nav-section{
+    background-color: #333;
+   display: flex;
+    justify-content: flex-end; 
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    text-align: end;
+    background-color:#333 ;
+}
+.navbar-icons{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ 
+}
+.nav-section a{
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+.nav-section a:hover{
+    border-bottom: 1px solid #fff;
+}
+
+.nav-icon{
+    margin-right: 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+   
+}
+.sec-icons:hover .nav-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: blue;
+    text-align: center;
+}
+/* styling the main */
+main{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 4rem;
+    
+    
+}
+.main-section{
+    padding: 0 1rem;
+}
+.icon{
+width: 25px;
+height: 25px;
+}
+
+.main-section h1{
+    font-size: 0;
+}
+.span{
+    font-size: 5rem;
+}
+.blue{
+  color: rgb(48, 127, 180);
+}
+.yellow{
+    color: rgb(247, 243, 20);
+}
+.green{
+    color: rgb(75, 180, 26);
+}
+.red{
+    color: rgb(223, 41, 41);
+}
+
+.input{
+    align-items: center;
+    display: flex;
+    width: 600px;
+    margin: 1.5rem 0 5rem;
+    position: relative;
+    
+}
+.input-txt{
+    width: 100%;
+    height: 2rem;
+    padding: 8px;
+    border-radius: 50px;
+    border: 1px solid #000;
+    outline: none;
+}
+.search{
+    position: absolute;
+    left: 1rem;
+}
+
+.voice{
+    position: absolute;
+    right: 1rem;
+}
+.buttons{
+    margin-top: 2rem;
+}
+.buttons > button{
+    background-color: rgb(231, 211, 211);
+    padding: 10px;
+    text-align: center;
+    outline: none;
+    border: none;
+    color:#333;
+    border-radius: 5px;
+
+}
+.main-section p{
+    margin-top: 2rem;
+    color: #333;
+}
+.main-section p span{
+    color:blue;
+    font-weight: bold;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+}
+main{
+    padding-bottom: 5rem;
+}
+/* styling the footer */
+footer{
+    background-color: #ddd;
+    position: absolute;
+  bottom: 0;
+  width: 100%;
+
+}
+
+footer > div{
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    display: flex;
+    justify-content: space-between;
+}
+.footer-section{
+    display: flex;
+  
+    text-align: center;
+
+
+    padding: 1rem 0;
+}
+.location{
+
+    padding: 1rem;
+    border-bottom: 1px solid #000;
+}
+
+
+.footer-section li{
+    list-style: none;
+    padding: 0 1rem
+    
+}
+@media only screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    
+ /* Main section */
+ .input{
+     width: 250px;
+     text-align: center;
+     margin: 1rem auto;
+     
+ }
+ .input-txt{
+     text-align: center;
+ }
+ .advert{
+     width: 100%;
+ }
+ .carbon{
+     width: 100%;
+ }
+.location{
+    padding: 0;
+}
+.footer-section{
+    justify-content: space-between;
+    padding: 0 .5rem;
+}
+.footer-section{
+    padding: .5rem 0;
+}
+.location,
+.footer-section{
+    padding: .8rem 1rem;
+}
+.footer-section li{
+    padding:  0;
+}
+ 
+ footer > div {
+     flex-direction: column;
+ }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .advert{
+        width: 100%;
+    }
+    
+    .current-country{
+        text-align: center;
+    }
+}
